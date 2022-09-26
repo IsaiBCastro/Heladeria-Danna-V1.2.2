@@ -1,0 +1,387 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*container*/
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  border-color: #fffdd0;
+  background-color: #fffdd0;
+}
+/*header*/
+.header-container {
+  width: 100%;
+}
+/*Navbar-container*/
+.nav-container {
+  background-color: #f863df;
+}
+/*NavBar*/
+/*logo*/
+.logo {
+  display: flex;
+  width: 16%;
+  height: 150px;
+  object-fit: cover;
+}
+.logo img {
+  width: 100;
+}
+/*End Logo*/
+.navbar {
+  width: 100%;
+  height: 95px;
+  border: 1px rgb(142, 23, 153) dashed;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  position: relative;
+}
+.navbar-list {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+.navbar-list__item {
+  width: 180px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logout a{
+  font-size: 20px;
+  color: rgb(255, 0, 0);
+}
+#logout a:hover{
+  color: white;
+}
+.navbar-item {
+  color: #000;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-item:hover {
+  color: #8729c2;
+}
+#active {
+  color: #9517e5;
+}
+.navbar-list__item a {
+  font: 25px sans-serif;
+}
+/*End Navbar*/
+/*End Navbar-container*/
+/*End Header*/
+/*Slider-container*/
+.slider-container {
+  width: fit-content;
+  height: 100%;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  display: flex;
+  transition: all 1s ease-in-out;
+}
+#slider-container{
+  height: 100%;
+  width: 100vw;
+  position: relative;
+}
+.slider-img {
+  width: 1366px;
+  height: 100%;
+  object-fit: cover;
+}
+.prevImg {
+  position: absolute;
+  width: 50px;
+  height: 455px;
+  background-color: rgba(128, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.nextImg {
+  position: absolute;
+  width: 50px;
+  height: 455px;
+  background-color: rgba(128, 0, 0, 0.2);
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.arrow-btn:hover {
+  background-color: rgba(0, 128, 0, 0.2);
+}
+.btn-slider {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  background-color: rgba(128, 0, 0, 0.2);
+  bottom: 20px;
+  left: 46%;
+  z-index: 10;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: darkgray;
+  border-radius: 50%;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.circle:hover {
+  background-color: green;
+}
+.circle-active {
+  background-color: green;
+}
+/*End Slider-container*/
+/*Footer*/
+footer#Footer {
+  padding: 25px 0;
+}
+footer#Footer {
+  background-color: #f863df;
+  padding: 35px 0;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+.footer.footer-style2 a,
+.footer.footer-style2 a:visited,
+.footer.footer-style2 {
+  color: #fff !important;
+  margin-top: auto;
+}
+.footer-text {
+  text-align: center;
+}
+/*End Footer*/
+/*Container*/
+/*Productos*/
+/*header*/
+.header-tabla-productos {
+  width: 100%;
+  height: 35%;
+  align-items: center;
+  justify-content: center;
+}
+#header-tabla-producto {
+  font-family: Pinky Promise;
+  left: 375px;
+  border: solid 1px #9517e5;
+  background-color: #9517e5;
+  border-radius: 30px;
+  color: white;
+  padding: 7.5px;
+  margin: 30px;
+  display: flex;
+}
+/*End Header*/
+/*Table*/
+table {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border: solid 5px #9517e5;
+}
+.cabeza {
+  font-family: Pinky Promise;
+  font-size: 60px;
+  text-align: center;
+  background-color: #f863df;
+  color: white;
+  padding: 10px;
+}
+tr,
+th,
+td {
+  border: solid 2px #9517e5;
+  text-align: center;
+}
+td {
+  color: #f863df;
+  font-family: Calibri;
+}
+#tipo {
+  font-size: 30px;
+  color: #9517e5;
+  font-family: Pinky Promise;
+}
+h1 {
+  position: absolute;
+  font-family: Calibri;
+  margin-left: 10px;
+}
+/*End Table*/
+/*End Productos*/
+/*Ordenar*/
+.ordenes-container {
+  position: relative;
+}
+.header-ordenes {
+  width: 100%;
+  height: 15%;
+  margin: 13px 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#header-ordenes {
+  font-family: Pinky Promise;
+  left: 510px;
+  border: solid 1px #9517e5;
+  background-color: #9517e5;
+  border-radius: 30px;
+  color: white;
+  padding: 7.5px;
+}
+.form-orden {
+  display: flex;
+  overflow: hidden;
+}
+.columna-1 {
+  width: 21.5%;
+  background-color: #f863df;
+  color: white;
+  box-shadow: 0 0 5px #a0a0a0;
+}
+#subheader-ordenes {
+  margin-top: 5px;
+  font-family: Pinky Promise;
+  text-align: center;
+}
+#cmbProducto {
+  font-size: 17.5px;
+  margin-left: 20px;
+  width: 65%;
+  display: flexbox;
+}
+.columna__1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 3px;
+  font-size: 17.5px;
+  left: 3.5%;
+  position: relative;
+  color: #9517e5;
+  text-align: center;
+  font-family: calibri;
+}
+#btnAddOrder , #btnFinishOrder{
+  position: relative;
+  color: #9517e5;
+  text-align: center;
+  font-family: calibri;
+  font-size: 17.5px;
+  left: 3.5%;
+}
+#boton {
+  position: relative;
+  left: 15px;
+  margin-bottom: 15px;
+}
+.columna-2 {
+  width: 77.5%;
+  height: 100%;
+}
+.cabeza-tabla-orden {
+  color: white;
+  font-family: pinky promise;
+  background-color: #9517e5;
+  font-size: 50px;
+}
+.tabla tr,
+td {
+  border-color: #f863df;
+  font-family: calibri;
+  font-size: 20px;
+}
+.tabla {
+  margin: 0 0 0 5px;
+}
+#btnAddOrder:hover,
+#btnFinishOrder:hover {
+  background: #f863df;
+  color: #fff;
+}
+/*End Ordenar*/
+/*Inicio Login*/
+.login-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F365BB;
+}
+.section-container{
+  width: 25%;
+  height: 65%;
+  border: solid #9517e5 5px ;
+  background-color: white;
+  border-radius: 20px;
+}
+.login-logo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logotype{
+  margin-bottom: -50px;  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 197.5px;
+}
+.input{
+  left: 0;
+  margin: 10px;
+  padding: 4.5px;
+  font-family: Pinky Promise;
+  width: 70%;
+}
+::placeholder{
+  font-size: 1rem;
+  font-family: Pinky Promise;
+}
+.button-iniciarsesion{
+  margin-top: 10px;
+  font-family: Pinky Promise;
+  font-size: 17.5px;
+  width: 70%;
+  background-color: #9517e5;
+  color: white;
+}
+.button-iniciarsesion:hover{
+  color: black;
+  background-color: #fffdd0;
+}
+/*End Login*/

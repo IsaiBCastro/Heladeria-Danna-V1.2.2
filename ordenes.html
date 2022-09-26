@@ -1,0 +1,110 @@
+	<!-- <div id="h1-container">
+	</div> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Heladeria Danna</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="./Css/Style.css" rel="stylesheet">
+    </head>
+    <body>
+    <div class="container">
+        <header class="header-container">
+            <div class="nav-container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <a href="index.html"><img src="./Resourses/Images/LogoHeladeriaDanna.png" alt="Logo" class="navbar-item"></a>
+                    </div>
+                    <ul class="navbar-list">
+                        <li class="navbar-list__item">
+                            <a href="index.html"class="navbar-item">Inicio</a>
+                        </li>
+                        <li class="navbar-list__item">
+                            <a href="productos.html" class="navbar-item">Productos</a>
+                        </li>
+                        <li class="navbar-list__item">
+                            <a href="ordenes.html" id="active" class="navbar-item">Ordenar</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="ordenes-container">
+			<div class="header-ordenes">
+				<h1 id="header-ordenes">Ordene su pedido en linea</h1>
+			</div>
+			<div class="form-orden">
+				<form class="columna-1" id="formdetalle">
+					<div class="div-forma">
+						<h2 id="subheader-ordenes">Realize su orden</h2>
+						<label for="txtNombre" class="columna__1">Cliente</label>
+						<input type="text" name="txtNombre" id="txtNombre" class="columna__1"><br><br>
+						<label for="txtCantidad" class="columna__1">Cantidad</label>
+						<input type="number" name="txtCantidad" id="txtCantidad" class="columna__1"><br><br>
+						<label for="txtProduto" class="columna__1">Producto</label>
+						<select name="cmbProducto" id="cmbProducto"></select><br><br>
+						<label for="txtFecha" class="columna__1">Fecha</label>
+						<input type="date" name="datetime" id="inputFecha" class="columna__1"><br><br>
+						<label for="txtPrecio" class="columna__1">Precio</label>
+						<input disabled type="number" name="txtPrecio" id="txtPrecio" class="columna__1"><br><br>
+						<label for="txtTotal" class="columna__1">Total</label>
+						<input disabled type="number" name="txtTotal" class="columna__1" id="txtTotal">
+						<div id="boton">
+							<input type="button" value="Agregar Orden" id="btnAddOrder" onclick="addtable()">
+							<input type="button" value="Finalizar Orden" id="btnFinishOrder" onclick="finishorder()">
+						</div>
+					</div>
+				</form>
+				<form class="columna-2">
+					<div class="div-forma-2">
+						<table class="tabla">
+							<tr>
+								<th colspan="6" class="cabeza-tabla-orden">Detalles de ordenes realizadas</th>
+							</tr>
+							<tr id="cabecera-tabla-orden">
+								<th>Cliente</th>
+								<th>Producto</th>
+								<th>Cantidad</th>
+								<th>Precio</th>
+								<th>Total</th>
+							</tr>
+							<tbody id="cuerpoTabla"></tbody>
+						</table>
+					</div>
+				</form>
+			</div>
+        </div>
+        <footer class="footer footer-style2 " id="Footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-text">
+                        <p>
+                            Helados y Mas, Heladeria Danna
+                        </p>
+                        <p>
+                            <a href="./about-us/privacy">
+                                Privacidad
+                            </a>&nbsp; |&nbsp; 
+                            <a href="./about-us/terms">
+                                Términos y Condiciones
+                            </a>&nbsp; |&nbsp;
+                            <a href="./about-us/contact.html">
+                                Contáctenos
+                            </a>&nbsp; 
+                            
+                        </p>
+                        <p>
+                            IsaiBCastro
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+	<script src="./JS/Ordenes.js"></script>
+    </body>
+</html>
